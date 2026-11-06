@@ -1,0 +1,4 @@
+# Semore Games - app-ads.txt
+# AdMob hesabı açılınca aşağıdaki satırdaki pub-XXXXXXXXXXXXXXXX kısmını
+# AdMob > Uygulamalar > app-ads.txt ayarla bölümünde verilen yayıncı kimliğinizle değiştirip başındaki # işaretini kaldırın.
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
