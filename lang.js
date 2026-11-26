@@ -3,7 +3,9 @@
   var root = document.documentElement;
   var saved = null;
   try { saved = localStorage.getItem("semore-lang"); } catch (e) {}
-  var lang = saved || ((navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+  // Oyundan gelen bağlantılar ?lang=en / ?lang=tr ile dili seçebilir
+  var q = (location.search.match(/[?&]lang=(tr|en)/) || [])[1];
+  var lang = q || saved || ((navigator.language || "en").toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
 
   function apply(l) {
     root.setAttribute("data-lang", l);
